@@ -1,5 +1,6 @@
 #! /usr/bin/env sh
-git pull https://github.com/chenyehai/GraduateDesigned.git
-git checkout develop
-python manage.py shell < db_init.py
-sh start_app.sh &
+git -C /myweb/GraduateDesigned checkout develop
+git -C /myweb/GraduateDesigned pull
+mkdir /myweb/GraduateDesigned/database
+python /myweb/GraduateDesigned/manage.py shell < "/myweb/GraduateDesigned/db_init.py"
+sh /myweb/GraduateDesigned/start_app.sh &
