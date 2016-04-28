@@ -1,4 +1,4 @@
-FORM ubuntu:latest
+FROM ubuntu:latest
 MAINTAINER chenyehai<chenyehai737@126.com>
 
 # update list
